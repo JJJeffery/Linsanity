@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+<link rel="stylesheet" href="__APP__/Public/css/admin-add.css" type="text/css" />
+</head>
+<body>
+<div id="header">当前操作>>编辑图片广告</div>
+<div id="content">
+<form action="__CONTROLLER__/editsave/id/{$info.id}" method="post" enctype="multipart/form-data">
+	<table>
+		<tr>
+			<td class="title">标题</td>
+			<td><input type="text" name="title" value="{$info.title}" class="input-box"/><input type="hidden" name="imagename" value="{$info.imagename}"/><input type="hidden" name="imagepath" value="{$info.imagepath}"/></td>
+			<td><span>一般可不填写，130X90必须写(最多9个中文字)</span></td>
+		</tr>
+		<tr>
+			<td class="title">链接</td>
+			<td><input type="text" name="href" value="{$info.href}" class="input-box"/></td>
+			<td><span>使用全链接</span></td>
+		</tr>
+		<tr>
+			<td class="title">类型</td>
+			<td><select name="tid" id=""><assign name="var" value="$info.tid"/>
+				<foreach name='type' item='v'>
+				<option value="{$v.id}" <if condition="$v.id eq $var">selected="selected"</if> >{$v.typename}</option>
+				</foreach>
+			</select></td>
+		</tr>
+		<tr>
+			<td class="title">图片</td>
+			<td><img src="__ROOT__/Uploads/Imageads/{$info.imagepath}{$info.imagename}" width="200" height="100"/><br /><br /><input type="file" name="upload" id="" /></td>
+		</tr>
+		<tr>
+			<td colspan="2"></td>
+		</tr>
+	</table>
+	<P><input id="button" type="submit" value="编辑广告" /></P>
+</form>
+</div>		
+</body>
+</html>

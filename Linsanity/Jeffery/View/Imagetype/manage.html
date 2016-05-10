@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+<link rel="stylesheet" type="text/css" href="__APP__/Public/css/admin-manage1.css" />
+<script type="text/javascript" src="__APP__/Public/js/jquery-1.10.1.js"></script>
+<script type="text/javascript" src="__APP__/Public/js/style-table.js"></script>
+</head>
+<body>
+<div id="header">当前操作>>管理图片类型</div>
+<div id="content">
+<table>
+<thead> 
+	<tr>
+		<th>ID</th>
+		<th>类型名称</th>
+		<th>操作</th>
+	</tr>
+</thead>
+	<foreach name="info" item="v">
+	<tbody>
+	<tr>
+		<td>{$v.id}</td>
+		<td>{$v.typename}</td>
+		<td><a href="__CONTROLLER__/edit/id/{$v.id}">编辑</a>|<a href="__CONTROLLER__/delete/id/{$v.id}">删除</a></td>
+	</tr>
+	</tbody>
+	</foreach>
+</table>
+</div>	
+</body>
+</html>

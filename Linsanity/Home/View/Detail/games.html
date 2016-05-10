@@ -1,0 +1,67 @@
+
+<div id="content">
+    <div id="ad-box">
+        <!-- 左侧动态图片开始 -->
+        <div id="focus-content">
+            <ul id="focus-image">
+                <foreach name='iadsC1' item='v'>
+                <li><a href="{$v.href}" target="_blank"><img src="__APP__/Uploads/Imageads/{$v.imagepath}{$v.imagename}" width="400" height="300"/></a></li>
+                </foreach>
+
+            </ul>
+            <ol id="focus-number">            
+            </ol>
+        </div>
+        <!-- 左侧动态图片结束 -->
+
+        <!-- 图片广告 130X90型，最多6条-->
+        <div id="image-ad" class="clear">
+
+        <foreach name='iadsB2' item='v'>
+            <div class="iadbox">
+                <p><a href="{$v.href}" target="_blank"><img src="__APP__/Uploads/Imageads/{$v.imagepath}{$v.imagename}" width="130" height="90"/></a></p>
+                <span class='pro-title'>{$v.title}</span>
+            </div>
+        </foreach>
+            
+        </div>
+    </div>
+
+    <!-- 右侧页面内容开始 -->
+    <div id="fk-cate-title">
+        <div id="fk-Title">{$cateInfo.title}</div>
+
+        <foreach name='gamesInfo' item='v'>
+        <li id="videos"><a href="{$v.href}" target="_blank">{$v.title}</a><span id="pubtime">{$v.dates}</span></li> 
+        </foreach>
+
+        <div id="page">{$pageShow}</div>
+    </div>
+    <!-- 右侧页面内容结束 -->
+</div>  
+
+<!-- 网页尾部开始 -->
+<div id="footer">
+    <div class="footer-iv">
+        <p class="footer-ivtext">  <!-- 友情链接第一行 -->
+        <foreach name="friendlinkInfo1" item="v">
+            &nbsp;<a href="{$v.href}" target="_blank">{$v.title}</a>&nbsp;
+        </foreach>    
+        </p>
+        <p class="footer-ivtext">  <!-- 友情链接第二行 -->
+        <foreach name="friendlinkInfo2" item="v">
+            &nbsp;<a href="{$v.href}" target="_blank">{$v.title}</a>&nbsp;
+        </foreach>           
+        </p>
+    </div>
+    <foreach name="footInfo" item="v">
+        <p class="footer-text">{$v.content}</p>
+    </foreach>
+    <p class="footer-text"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspanid='cnzz_stat_icon_1253899947'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/stat.php%3Fid%3D1253899947%26online%3D2'type='text/javascript'%3E%3C/script%3E"));</script></p>
+</div>
+<!-- 网页尾部结束 -->
+
+<!-- 返回顶部 -->
+<a href="#" title="返回顶部" id="gotop"></a>
+</body>
+</html>

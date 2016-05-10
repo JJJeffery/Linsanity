@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+<link rel="stylesheet" type="text/css" href="__APP__/Public/css/admin-manage2.css" />
+<script type="text/javascript" src="__APP__/Public/js/jquery-1.10.1.js"></script>
+<script type="text/javascript" src="__APP__/Public/js/style-table.js"></script>
+</head>
+<body>
+<div id="header">
+    <div id="head1">当前操作>>管理图片广告</div>
+    <div id="head2">
+        <div id="h2-title">图片类型分类：</div>
+        <foreach name='type' item='c'>
+            <a href="__CONTROLLER__/manage/tid/{$c.id}" >{$c.typename}</a>&nbsp;&nbsp;
+        </foreach>
+    </div>
+</div>
+
+<div id="content">
+<div id="cur-cate">当前分类：<span style="color:red;">{$curtype}</span></div>
+<table>
+<thead>
+	<tr>
+		<th>ID</th>
+		<th>标题</th>
+		<th>链接</th>
+		<th>图片</th>
+		<th>操作</th>
+	</tr>
+	</thead>
+	<foreach name='iadsInfo' item='v'>
+	<tbody>
+	<tr>
+		<td>{$v.id}</td>
+		<td>{$v.title}</td>
+		<td>{$v.href}</td>
+		<td><img src="__ROOT__/Uploads/Imageads/{$v.imagepath}{$v.imagename}" width="300" height="90" /></td>
+		<td><a href="__CONTROLLER__/edit/id/{$v.id}">编辑</a>|<a href="__CONTROLLER__/delete/id/{$v.id}">删除</a></td>
+	</tr>
+	</tbody>
+	</foreach>
+	<tfoot>
+	<tr>
+		<td colspan="5" align="center">{$pageShow}</td>
+	</tr>
+	</tfoot>
+</table>
+</div>	
+</body>
+</html>

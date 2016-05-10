@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+<link rel="stylesheet" href="__APP__/Public/css/admin-add.css" type="text/css" />
+</head>
+<body>
+<div id="header">当前操作>>编辑新闻</div>
+<div id="content">
+<form action="__CONTROLLER__/editsave/id/{$newsInfo.id}" method="post" enctype="multipart/form-data">
+	<table>
+		<tr>
+			<td class="title">标题</td>
+			<td><input type="text" name="title" value="{$newsInfo.title}" class="input-box"/><input type="hidden" name="imagename" value="{$newsInfo.imagename}"/><input type="hidden" name="imagepath" value="{$newsInfo.imagepath}"/></td>
+			<td><span><b style="color:red;">最多19个中文字</b>，空格数字占半个字</span></td>
+		</tr>
+		<tr>
+			<td class="title">内容</td>
+			<td><textarea name="content" id="" cols="30" rows="10">{$newsInfo.content}</textarea></td>
+		</tr>
+		<tr>
+			<td class="title">链接</td>
+			<td><input type="text" name="href" value="{$newsInfo.href}" class="input-box"/></td>
+			<td><span>填写全链接</span></td>
+		</tr>
+		<tr>
+			<td class="title">作者</td>
+			<td><input type="text" name="author" value="{$newsInfo.author}" class="input-box"/></td>
+		</tr>
+		<tr>
+			<td class="title">图片</td>
+			<td><img src="__ROOT__/Uploads/News/{$newsInfo.imagepath}{$newsInfo.imagename}" width="200" height="200"/><br /><br />
+			    <input type="file" name="photo[]" id="" multiple="multiple"/></td>
+		</tr>
+		<tr>
+			<td class="title">视频</td>
+			<td><input type="radio" name="isvideo" value="1" <if condition="$newsInfo.isvideo eq 1">checked="checked"</if> />是<input type="radio" name="isvideo" value="0" <if condition="$newsInfo.isvideo eq 0">checked="checked"</if>/>否</td>
+		</tr>
+		<tr>
+			<td class="title">分类</td>
+			<td><select name="cateid" id=""><assign name="var" value="$newsInfo.cateid" />
+			<foreach name='cateid' item='v'>			
+				<option value="{$v.id}" <if condition="$v.id eq $var">selected="selected"</if> >{$v.title}</option>
+			</foreach>
+			</select></td>
+		</tr>
+	</table>
+	<p><input id="button" type="submit" value="编辑新闻" /></p>
+</form>
+</div>		
+</body>
+</html>

@@ -1,0 +1,188 @@
+
+<!-- 广告区域1 -->
+<div id="ad1">
+    <ul class='clear'><!-- 文字广告 -->
+        <foreach name='tads2' item='v'>
+            <li><a href="{$v.href}" target="_blank">{$v.title}</a></li> <!-- 字数8个字 -->
+        </foreach>
+    </ul>
+    <foreach name='iadsA1' item='v'>  
+    <div id="imgad1"><a href="{$v.href}" target="_blank"><img src="__APP__/Uploads/Imageads/{$v.imagepath}{$v.imagename}" width="1000" height="90" style="border:none"/></a></div> <!-- 图片广告 -->
+    </foreach>
+    <ul class='clear'><!-- 文字广告 -->
+        <foreach name='tads3' item='v'>
+            <li><a href="{$v.href}" target="_blank">{$v.title}</a></li> <!-- 字数8个字 -->
+        </foreach>
+    </ul>   
+</div>
+
+
+<!-- 正文内容1 -->
+<div id="content1">
+    <div id="fkVideo">
+        <div class="fkTitle"><span>疯狂视频</span><a href="__MODULE__/Detail/detail/id/1" target="_blank">更多&gt;&gt;</a></div>
+        <foreach name='newsA' item='v'>
+        <if condition="$v.isvideo eq 1">
+        <li class="videos"><a href="{$v.href}" target="_blank">{$v.title}</a></li> <!-- 最多18个中文字////最多14条视频-->
+        <else />
+        <li class="texts"><a href="{$v.href}" target="_blank">{$v.title}</a></li> <!-- 最多18个中文字////最多14条视频-->
+        </if>
+        </foreach>
+    </div>
+    <div id="fkNews">
+        <div class="fkTitle"><span>疯狂新闻</span><a href="__MODULE__/Detail/detail/id/2" target="_blank">更多&gt;&gt;</a></div>
+        <foreach name='newsB' item='v'>
+        <if condition="$v.isvideo eq 1">
+        <li class="videos"><a href="{$v.href}" target="_blank">{$v.title}</a></li> <!-- 最多18个中文字////最多14条视频-->
+        <else />
+        <li class="texts"><a href="{$v.href}" target="_blank">{$v.title}</a></li> <!-- 最多18个中文字////最多14条视频-->
+        </if>
+        </foreach>
+    
+    </div>
+    <div id="fkSports">
+        <div class="fkTitle"><span>疯狂体育</span><a href="__MODULE__/Detail/detail/id/4" target="_blank">更多&gt;&gt;</a></div>
+        <foreach name='newsC' item='v'>
+        <if condition="$v.isvideo eq 1">
+        <li class="videos"><a href="{$v.href}" target="_blank">{$v.title}</a></li> <!-- 最多18个中文字////最多14条视频-->
+        <else />
+        <li class="texts"><a href="{$v.href}" target="_blank">{$v.title}</a></li> <!-- 最多18个中文字////最多14条视频-->
+        </if>
+        </foreach>
+    </div>
+</div>
+
+
+<!-- 广告区域2 -->
+<div id="ad2">
+    <div id="imgad2" class="clear"><!-- 图片广告 130X90型-->
+        <foreach name='iadsB1' item='v'>
+        <div class="ad2-box"><!-- 最多7条 -->
+            <p><a href="{$v.href}" target="_blank"><img src="./Uploads/Imageads/{$v.imagepath}{$v.imagename}" width="130" height="90"/></a></p>
+            <span class='ad2-title'>{$v.title}</span>
+        </div><div class="ad2-space"></div>
+        </foreach>
+
+    </div> 
+    <ul class='clear'><!-- 文字广告 -->
+        <foreach name='tads4' item='v'>
+            <li><a href="{$v.href}" target="_blank">{$v.title}</a></li> <!-- 字数8个字 -->
+        </foreach>
+    </ul>      
+    <ul class='clear'><!-- 文字广告 -->
+        <foreach name='tads5' item='v'>
+            <li><a href="{$v.href}" target="_blank">{$v.title}</a></li> <!-- 字数8个字 -->
+        </foreach>
+    </ul>   
+</div>
+
+<!-- 正文内容2 -->
+<div id="content2">
+    <div id="fkFuns">
+        <div class="fkTitle"><span>疯狂趣事</span><a href="__MODULE__/Detail/detail/id/3" target="_blank">更多&gt;&gt;</a></div>
+        <foreach name='newsD' item='v'>
+        <if condition="$v.isvideo eq 1">
+        <li class="videos"><a href="{$v.href}" target="_blank">{$v.title}</a></li> <!-- 最多18个中文字////最多14条视频-->
+        <else />
+        <li class="texts"><a href="{$v.href}" target="_blank">{$v.title}</a></li> <!-- 最多18个中文字////最多14条视频-->
+        </if>
+        </foreach>
+    </div>
+    <div id="fkTech">
+        <div class="fkTitle"><span>疯狂科技</span><a href="__MODULE__/Detail/detail/id/5" target="_blank">更多&gt;&gt;</a></div>
+        <foreach name='newsE' item='v'>
+        <if condition="$v.isvideo eq 1">
+        <li class="videos"><a href="{$v.href}" target="_blank">{$v.title}</a></li> <!-- 最多18个中文字////最多14条视频-->
+        <else />
+        <li class="texts"><a href="{$v.href}" target="_blank">{$v.title}</a></li> <!-- 最多18个中文字////最多14条视频-->
+        </if>
+        </foreach>
+    </div>
+    <div id="fkHappy">
+        <div class="fkTitle"><span>疯狂娱乐</span><a href="__MODULE__/Detail/detail/id/6" target="_blank">更多&gt;&gt;</a></div>
+        <foreach name='newsF' item='v'>
+        <if condition="$v.isvideo eq 1">
+        <li class="videos"><a href="{$v.href}" target="_blank">{$v.title}</a></li> <!-- 最多18个中文字////最多14条视频-->
+        <else />
+        <li class="texts"><a href="{$v.href}" target="_blank">{$v.title}</a></li> <!-- 最多18个中文字////最多14条视频-->
+        </if>
+        </foreach>
+    </div>
+</div>
+
+<!-- 广告区域3 -->
+<div id="ad1">
+    <ul class='clear'><!-- 文字广告 -->
+        <foreach name='tads6' item='v'>
+            <li><a href="{$v.href}" target="_blank">{$v.title}</a></li> <!-- 字数8个字 -->
+        </foreach>
+    </ul>
+    <foreach name='iadsA2' item='v'><!-- 图片广告 -->  
+    <div id="imgad1"><a href="{$v.href}" target="_blank"><img src="./Uploads/Imageads/{$v.imagepath}{$v.imagename}" width="1000" height="90" style="border:none"/></a></div> 
+    </foreach>  
+    <ul class='clear'><!-- 文字广告 -->
+        <foreach name='tads7' item='v'>
+            <li><a href="{$v.href}" target="_blank">{$v.title}</a></li> <!-- 字数8个字 -->
+        </foreach>
+    </ul>   
+</div>
+
+<!-- 正文内容3 -->
+<div id="content3">
+    <div id="fkLinsanity">
+        <div class="fkTitle"><span>林疯狂</span><a href="__MODULE__/Detail/games/id/7" target="_blank">更多&gt;&gt;</a></div>
+        <foreach name='gamesG' item='v'>
+        <li class="videos"><a href="{$v.href}" target="_blank">{$v.title}</a></li> <!-- 最多18个中文字////最多14条视频-->
+        </foreach>
+    </div>
+    <div id="fkClassic">
+        <div class="fkTitle"><span>赛季经典</span><a href="__MODULE__/Detail/games/id/8" target="_blank">更多&gt;&gt;</a></div>
+        <foreach name='gamesH' item='v'>
+        <li class="videos"><a href="{$v.href}" target="_blank">{$v.title}</a></li> <!-- 最多18个中文字////最多14条视频-->
+        </foreach>
+    </div>
+    <div id="fkAbout">
+        <div class="fkTitle"><span>关于疯狂</span><a href="__MODULE__/Detail/detail/id/9" target="_blank">更多&gt;&gt;</a></div>
+        <foreach name='newsI' item='v'>
+        <if condition="$v.isvideo eq 1">
+        <li class="videos"><a href="{$v.href}" target="_blank">{$v.title}</a></li> <!-- 最多18个中文字////最多14条视频-->
+        <else />
+        <li class="texts"><a href="{$v.href}" target="_blank">{$v.title}</a></li> <!-- 最多18个中文字////最多14条视频-->
+        </if>
+        </foreach>
+    </div>
+</div>
+
+<!-- 广告区域4 -->
+<div id="ad1">
+    <foreach name='iadsA3' item='v'><!-- 图片广告 -->  
+    <div id="imgad1"><a href="{$v.href}" target="_blank"><img src="./Uploads/Imageads/{$v.imagepath}{$v.imagename}" width="1000" height="90" style="border:none"/></a></div> 
+    </foreach>  
+</div>
+
+<!-- 网页尾部开始 -->
+<div id="footer">
+    <div class="footer-iv">
+        <p class="footer-ivtext">  <!-- 友情链接第一行 -->
+        <foreach name="friendlinkInfo1" item="v">
+            &nbsp;<a href="{$v.href}" target="_blank">{$v.title}</a>&nbsp;
+        </foreach>    
+        </p>
+        <p class="footer-ivtext">  <!-- 友情链接第二行 -->
+        <foreach name="friendlinkInfo2" item="v">
+            &nbsp;<a href="{$v.href}" target="_blank">{$v.title}</a>&nbsp;
+        </foreach>           
+        </p>
+    </div>
+    <foreach name="footInfo" item="v">
+        <p class="footer-text">{$v.content}</p>
+    </foreach>
+    <p class="footer-text"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspanid='cnzz_stat_icon_1253899947'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/stat.php%3Fid%3D1253899947%26online%3D2'type='text/javascript'%3E%3C/script%3E"));</script></p>
+</div>
+<!-- 网页尾部结束 -->
+
+<!-- 返回顶部 -->
+<a href="#" title="返回顶部" id="index-gotop"></a>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+@CHARSET "UTF-8";
+*{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration:none;
+}
+img{
+	border:none;
+}
+ul,ol,li{
+	list-style:none;
+}
+:focus{
+	outline:none;
+}
+.clear{
+	overflow:hidden;
+}

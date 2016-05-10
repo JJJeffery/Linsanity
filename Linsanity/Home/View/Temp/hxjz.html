@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="shortcut icon" href="__PUBLIC__/images/logo-title.png">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>社会主义核心价值观公益广告</title>
+<meta name="keywords" content="社会主义核心价值观公益广告" />
+<meta name="description" content="社会主义核心价值观公益广告" />
+<script type="text/javascript" src="__APP__/Public/js/jquery-1.10.1.js"></script>
+<link rel="stylesheet" href="__PUBLIC__/css/reset.css" type="text/css" />
+<script type="text/javascript">
+	$(function(){
+	    $('#navigator-detail').hide();
+	    $('#navigator').mouseover(function(){	    	
+	        $('#navigator-detail').show('fast');
+        })
+        $('#navigator').mouseleave(function(){
+	        $('#navigator-detail').hide();
+        })
+    })
+</script>
+<style type="text/css">
+	#top{
+		width: 948px;
+		height: 35px;
+		margin: 0 auto;
+		background-color: #F7F7F7; 
+		border-left: 1px solid #DBDEE1;
+		border-right: 1px solid #DBDEE1;
+		line-height: 35px;
+	}
+	#left{
+		float: left;
+	}
+	#right{
+		float: right;
+	}
+	#right .aaaa{
+		display: block;
+        float: left;
+        height: 35px;
+        line-height: 35px;
+        font-size: 13px;
+        text-align: center;
+	}
+	#right .aa{
+		display: block;
+        width: 70px;
+        color: black;       
+	}
+	#right .aa:hover,#right .aa:active{
+		background-color: white;
+        color: #FF8500;
+	}
+
+	/*导航隐藏窗口*/
+    #navigator{
+        position: relative;
+    }
+    #navigator-detail{       
+        width: 400px;
+        /*height: 300px;*/
+        border: 1px solid #EDEEF0;
+        background-color: white;
+        position: fixed;
+        right: 100px;
+        z-index: 90000;
+    }
+    #oneRow,#twoRow{
+        width: 400px;
+        /*height: 80px;*/
+        /*border: 1px solid red;*/
+        margin: 10px auto;
+    }
+    .row-title{
+        float: left;
+        display: block;
+        width: 100px;
+        /*height: 120px;*/
+        /*line-height: 120px;*/
+        font-size: 18px;
+        text-align: center;
+        font-family: 微软雅黑;
+        color: #FF8500;
+        /*border: 1px solid blue;*/
+    }
+    .row-detail{
+        float: left;
+        display: block;
+        width: 300px;
+        /*height: 120px;*/
+        /*border: 1px solid orange;*/
+    }
+    .row-detail .bbb{
+        width: 75px;
+        height: 40px;
+        line-height: 40px;
+        display: block;
+        float: left;
+        text-align: center;
+        font-family: 微软雅黑;
+        color: black;
+        font-size: 14px;        
+    }
+    .row-detail .bbb:hover,.row-detail .bbb:active{
+        background-color: #EDEEF0;
+        color: #FF8500;
+    }
+
+
+	#img{
+		width: 950px;
+		height: 630px;
+		margin: 0 auto;
+		display: block;
+	}
+	#footer{
+        width: 950px;
+        margin: 20px auto;
+        /*background-color: blue;*/
+        /*border: 1px solid #cccccc;*/
+    }
+    .footer-text{
+        text-align: center;
+        font-size: 12px;
+        /*font-family: 微软雅黑;*/
+        margin: 10px auto; 
+        color: #939393;
+    }
+    .footer-text a{
+        color: #939393;
+    }
+    .footer-text a:hover,.footer-text a:active{
+        color: red;
+        text-decoration: underline;
+    }
+</style>
+
+</head>
+<body>
+<div id="top" class="clear">
+	<div id="left"><img src="__PUBLIC__//images/small-logo.jpg" alt="" /></div>
+	<div id="right" class="clear">
+	    <div class="aaaa"><a href="__APP__/index.php" class="aa">网站首页</a></div>
+	    <div class="aaaa" id="navigator">
+	        <a href="#" class="aa">网站导航</a>
+	            <!-- 网站导航隐藏框 -->
+                <div id="navigator-detail">
+                    <div id="oneRow" class="clear">
+                        <div class="row-title">疯狂系列</div>
+                        <div class="row-detail">
+                            <foreach name="cateInfo" item="v">
+                            <if condition="($v.title eq '林疯狂') OR ($v.title eq '赛季经典')">
+                            
+                            <else />
+                                <a class="bbb" href="__MODULE__/Detail/detail/id/{$v.id}">{$v.title}</a>
+                            </if>
+                            </foreach> 
+                        </div>
+                    </div>
+                    <div id="twoRow" class="clear">
+                        <div class="row-title">比赛系列</div>
+                        <div class="row-detail">
+                            <foreach name="cateInfo" item="v">
+                            <if condition="($v.title eq '林疯狂') OR ($v.title eq '赛季经典')">
+                                <a class="bbb" href="__MODULE__/Detail/games/id/{$v.id}">{$v.title}</a>
+                            <else />
+                            
+                            </if>
+                            </foreach> 
+                        </div>
+                    </div>
+
+                </div>
+                <!-- 网站导航隐藏框 -->
+        </div> 
+	</div>
+</div>
+<div id="img"><img src="__PUBLIC__/images/hexinjiazhi.jpg" width="950" height="630" /></div>
+<div id="footer">
+    <foreach name="footInfo" item="v">
+        <p class="footer-text">{$v.content}</p>
+    </foreach>
+</div>	
+</body>
+</html>

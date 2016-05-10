@@ -1,0 +1,673 @@
+/*******主页CSS布局文件****************/
+/***************/
+/***************/
+/***************/
+
+/************顶部小导航开始************/
+	#topnavi-box{
+	    width: 100%;
+	    height: 35px;
+	    background-color: #F7F7F7;
+	    border-top: 3px solid #FF8500;
+	    border-bottom: 1px solid #EDEEF0;
+        
+        
+	}
+	#topnavi{
+	    width: 1000px;
+	    height: 35px;
+	    /*background-color: yellow;*/
+	    margin: 0 auto;
+        
+	}
+	#topnavi-left a{
+	    display: block;
+	    float: left;
+	    height: 35px;
+	    width: 120px;
+	    line-height: 35px;
+	    text-align: center;
+	    font-size: 12px;
+	    color: black;
+	}
+    #topnavi-left a:hover,#topnavi-left a:active{
+        color: #FF8500;
+        text-decoration: underline;
+    }
+
+
+    /*导航右边*/
+	#topnavi-right{
+		float: right;
+	}
+    #topnavi-right .rrr,#topnavi-right #navi-time{
+        display: block;
+        float: left;
+        height: 35px;
+        line-height: 35px;
+        font-size: 12px;
+        text-align: center;
+    }
+    #topnavi-right .rrr .aaa{
+        display: block;
+        width: 70px;
+        color: black;
+    }
+    #topnavi-right .rrr .aaa:hover,#topnavi-right .rrr .aaa:active{
+        background-color: white;
+        color: #FF8500;
+    }
+
+
+    /*导航隐藏窗口*/
+    #navigator{
+        position: relative;
+    }
+    #navigator-detail{       
+        width: 400px;
+        /*height: 300px;*/
+        border: 1px solid #EDEEF0;
+        background-color: white;
+        position: absolute;
+        right: 0;
+        z-index: 10000;
+    }
+    #oneRow,#twoRow{
+        width: 400px;
+        /*height: 80px;*/
+        /*border: 1px solid red;*/
+        margin: 10px auto;
+    }
+    .row-title{
+        float: left;
+        display: block;
+        width: 100px;
+        /*height: 120px;*/
+        /*line-height: 120px;*/
+        font-size: 18px;
+        text-align: center;
+        font-family: 微软雅黑;
+        color: #FF8500;
+        /*border: 1px solid blue;*/
+    }
+    .row-detail{
+        float: left;
+        display: block;
+        width: 300px;
+        /*height: 120px;*/
+        /*border: 1px solid orange;*/
+    }
+    .row-detail .bbb{
+        width: 75px;
+        height: 40px;
+        line-height: 40px;
+        display: block;
+        float: left;
+        text-align: center;
+        font-family: 微软雅黑;
+        color: black;
+        font-size: 14px;        
+    }
+    .row-detail .bbb:hover,.row-detail .bbb:active{
+        background-color: #EDEEF0;
+        color: #FF8500;
+    }
+/************顶部小导航结束************/
+
+/************LOGO-搜索部分开始************/
+    #logo-box{
+    	width: 100%;
+    	height: 60px;
+    	/*background-color: red;*/
+    }
+    #logo{
+    	width: 1000px;
+    	height: 60px;
+    	margin: 0 auto;
+    }
+    #logo-img{
+        width: 177px;
+    	display: block;
+    	float: left;
+    	margin-top: 5px;
+    }
+    
+    #search{
+        display: block;
+        float: left;
+        width: 310px;
+        border: none;
+        height: 35px;
+        margin-top: 12px;
+        margin-left: 30px;
+    }
+    #search #inp{
+        border: none;
+        float: left;
+        width: 230px;
+        height: 35px;
+        color: gray;
+        padding-left: 5px;
+        background: url(../images/search-bar-keywords.png) no-repeat 0 0;
+    }
+    #search #but{
+        border: none;
+        width: 66px;
+        height: 35px;
+        background: url(../images/bg2.png) no-repeat 0 0;
+        cursor: pointer;
+    }
+    #weather{
+        display: block;
+        float: left;
+        margin-top: 12px;
+        margin-left: 27px;
+    }
+
+    #logo-ad{
+        height: 50px;
+        width: 246px;
+        float: right;
+        /*border: 1px solid red;*/
+        margin-top: 5px;
+    }
+    #img1{
+        float: right;
+    }
+    #img2{
+        float: right;
+        margin-right: 10px;
+    }
+
+    
+/************LOGO-搜索部分结束************/
+
+/************导航条开始************/
+    #navibar-box{
+    	width: 100%;
+    	height: 40px;
+    }
+    #navibar{
+    	width: 1000px;
+    	height: 40px;
+    	margin: 0 auto;
+        background-color: #F7F7F7;
+    }
+    #navibar #navibar-left li{
+    	display: block;
+    	float: left;
+    	height: 40px;
+    	width: 90px;
+    	line-height: 40px;
+    	text-align: center;
+    }
+    #navibar #navibar-left li a{
+    	display: block;
+    	/*font-weight: bold;*/
+    	color: black;
+        font-family: 微软雅黑;
+    }
+    #navibar #navibar-left li a:hover,#navibar #navibar-left li a:active{
+        color: #FF8500;
+        background-color: #edeef0;
+        background-image: url(../images/navigation-hover-bg.png);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+/************导航条结束************/
+
+/************广告区域1************/
+    #ad1{
+        width: 1000px;
+        /*height: 30px;*/
+        margin: 0 auto;
+        background-color: #F7F7F7;
+        margin-top: 20px;
+    }
+    #ad1 li{
+        display: block;
+        float: left;
+        width: 125px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 12px;   
+    }
+    #ad1 li a{
+        color: gray;
+    }
+    #ad1 li a:hover,#ad1 li a:active{
+        color: #FF8500;
+        text-decoration: underline;
+    }
+    #imgad1{
+        width: 1000px;
+        height: 90px;
+        /*background-color: blue;*/
+
+    }
+
+
+/************正文内容1************/
+    #content1{
+    	width: 1000px;
+    	margin: 0 auto;
+    	/*background-color: red;*/
+        height: 400px;
+        margin-top: 20px;
+    }
+
+    /*疯狂视频*/
+    #fkVideo{
+        width: 320px;
+        /*background-color: blue;*/
+        height: 400px;
+        float: left;
+    }
+    #fkVideo .videos{
+        background: url(../images/video.png) no-repeat -5px 2px; 
+        padding-left: 30px;
+        margin-top: 6px;
+    }
+    @-moz-document url-prefix(){#fkVideo .videos{margin-top: 4px;}}
+    #fkVideo .texts{
+        background: url(../images/news.png) no-repeat 10px 2px; 
+        padding-left: 30px;
+        margin-top: 6px;
+    }
+    @-moz-document url-prefix(){#fkVideo .texts{margin-top: 4px;}}
+    #fkVideo li a{
+        color: #52687e;
+        font-size: 15px;
+        font-family: 微软雅黑;
+    }
+    #fkVideo li a:hover,#fkVideo li a:active{
+        color: #FF8500;
+        text-decoration: underline;
+    }
+
+    /*疯狂新闻*/
+    #fkNews{
+        width: 320px;
+        /*background-color: blue;*/
+        height: 400px;
+        float: left;
+        margin-left: 20px;
+    }
+    #fkNews .videos{
+        background: url(../images/video.png) no-repeat -5px 2px; 
+        padding-left: 30px;
+        margin-top: 6px;
+    }
+    @-moz-document url-prefix(){#fkNews .videos{margin-top: 4px;}}
+    #fkNews .texts{
+        background: url(../images/news.png) no-repeat 10px 2px; 
+        padding-left: 30px;
+        margin-top: 6px;
+    }
+    @-moz-document url-prefix(){#fkNews .texts{margin-top: 4px;}}
+    #fkNews li a{
+        color: #52687e;
+        font-size: 15px;
+        font-family: 微软雅黑;
+    }
+    #fkNews li a:hover,#fkNews li a:active{
+        color: #FF8500;
+        text-decoration: underline;
+    }
+
+    /*疯狂体育*/
+    #fkSports{
+        width: 320px;
+        /*background-color: blue;*/
+        height: 400px;
+        float: left;
+        margin-left: 20px;
+    }
+    #fkSports .videos{
+        background: url(../images/video.png) no-repeat -5px 2px; 
+        padding-left: 30px;
+        margin-top: 6px;
+    }
+    @-moz-document url-prefix(){#fkSports .videos{margin-top: 4px;}}
+    #fkSports .texts{
+        background: url(../images/news.png) no-repeat 10px 2px; 
+        padding-left: 30px;
+        margin-top: 6px;
+    }
+    @-moz-document url-prefix(){#fkSports .texts{margin-top: 4px;}}
+    #fkSports li a{
+        color: #52687e;
+        font-size: 15px;
+        font-family: 微软雅黑;
+    }
+    #fkSports li a:hover,#fkSports li a:active{
+        color: #FF8500;
+        text-decoration: underline;
+    }
+    
+    /*模块标题*/
+    .fkTitle{
+        width: 320px;
+        height: 35px;
+        border: 1px solid #DBDEE1;
+        background-color: #F7F7F7;              
+        line-height: 35px;
+    }
+    .fkTitle span{
+        padding-left: 10px;
+        font-family: 微软雅黑;
+        color: #000;
+    }
+    .fkTitle a{
+        float: right; 
+        color: #000;
+        font-family: 微软雅黑;
+        font-size: 12px;       
+    }
+    .fkTitle a:hover,.fkTitle a:active{
+        color: #FF8500;
+    }
+
+/************正文内容2************/
+    #content2{
+        width: 1000px;
+        margin: 0 auto;
+        /*background-color: red;*/
+        height: 400px;
+        margin-top: 20px;
+    }
+
+    /*疯狂趣事*/
+    #fkFuns{
+        width: 320px;
+        /*background-color: blue;*/
+        height: 400px;
+        float: left;
+    }
+    #fkFuns .videos{
+        background: url(../images/video.png) no-repeat -5px 2px; 
+        padding-left: 30px;
+        margin-top: 6px;
+    }
+    @-moz-document url-prefix(){#fkFuns .videos{margin-top: 4px;}}
+    #fkFuns .texts{
+        background: url(../images/news.png) no-repeat 10px 2px; 
+        padding-left: 30px;
+        margin-top: 6px;
+    }
+    @-moz-document url-prefix(){#fkFuns .texts{margin-top: 4px;}}
+    #fkFuns li a{
+        color: #52687e;
+        font-size: 15px;
+        font-family: 微软雅黑;
+    }
+    #fkFuns li a:hover,#fkFuns li a:active{
+        color: #FF8500;
+        text-decoration: underline;
+    }
+    
+    /*疯狂科技*/
+    #fkTech{
+        width: 320px;
+        /*background-color: yellow;*/
+        height: 400px;
+        float: left;
+        margin-left: 20px;
+    }
+    #fkTech .videos{
+        background: url(../images/video.png) no-repeat -5px 2px; 
+        padding-left: 30px;
+        margin-top: 6px;
+    }
+    @-moz-document url-prefix(){#fkTech .videos{margin-top: 4px;}}
+    #fkTech .texts{
+        background: url(../images/news.png) no-repeat 10px 2px; 
+        padding-left: 30px;
+        margin-top: 6px;
+    }
+    @-moz-document url-prefix(){#fkTech .texts{margin-top: 4px;}}
+    #fkTech li a{
+        color: #52687e;
+        font-size: 15px;
+        font-family: 微软雅黑;
+    }
+    #fkTech li a:hover,#fkTech li a:active{
+        color: #FF8500;
+        text-decoration: underline;
+    }
+
+    /*疯狂娱乐*/
+    #fkHappy{
+        width: 320px;
+        /*background-color: gray;*/
+        height: 400px;
+        float: left;
+        margin-left: 20px;
+    }
+    #fkHappy .videos{
+        background: url(../images/video.png) no-repeat -5px 2px; 
+        padding-left: 30px;
+        margin-top: 6px;
+    }
+    @-moz-document url-prefix(){#fkHappy .videos{margin-top: 4px;}}
+    #fkHappy .texts{
+        background: url(../images/news.png) no-repeat 10px 2px; 
+        padding-left: 30px;
+        margin-top: 6px;
+    }
+    @-moz-document url-prefix(){#fkHappy .texts{margin-top: 4px;}}
+    #fkHappy li a{
+        color: #52687e;
+        font-size: 15px;
+        font-family: 微软雅黑;
+    }
+    #fkHappy li a:hover,#fkHappy li a:active{
+        color: #FF8500;
+        text-decoration: underline;
+    }
+
+/************广告区域2************/
+    #ad2{
+        width: 1000px;
+        /*height: 30px;*/
+        margin: 0 auto;
+        background-color: #F7F7F7;
+        margin-top: 20px;
+    }
+    #ad2 li{
+        display: block;
+        float: left;
+        width: 125px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 12px;   
+    }
+    #ad2 li a{
+        color: gray;
+    }
+    #ad2 li a:hover,#ad2 li a:active{
+        color: #FF8500;
+        text-decoration: underline;
+    }
+    #imgad2{
+        width: 1000px;
+        height: 90px;
+        /*background-color: white;*/
+    }
+    .ad2-box{
+        width: 130px;
+        height: 90px;
+        display: block;
+        float: left;
+        /*margin-left: 11px;*/
+        position: relative;
+        /*background-color: red;*/
+    }
+    .ad2-space{
+        width: 15px;
+        height: 90px;
+        display: block;
+        float: left;
+    }
+    .ad2-title{
+        display: block;
+        width: 130px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        font-family: 微软雅黑;
+        font-size: 13px;
+        color: white;
+        background-color: black;
+        opacity: .6;
+        filter: alpha(opacity=80);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    .ad2-box:hover .ad2-title{
+        color: orange;
+        opacity: .9;
+        filter: alpha(opacity=90);
+    } 
+
+/************正文内容3************/
+    #content3{
+        width: 1000px;
+        margin: 0 auto;
+        /*background-color: red;*/
+        height: 400px;
+        margin-top: 20px;
+    }
+    /*林疯狂*/
+    #fkLinsanity{
+        width: 320px;
+        /*background-color: blue;*/
+        height: 400px;
+        float: left;
+    }
+    #fkLinsanity .videos{
+        background: url(../images/video.png) no-repeat -5px 2px; 
+        padding-left: 30px;
+        margin-top: 6px;
+    }
+    @-moz-document url-prefix(){#fkLinsanity .videos{margin-top: 4px;}}
+    #fkLinsanity li a{
+        color: #52687e;
+        font-size: 15px;
+        font-family: 微软雅黑;
+    }
+    #fkLinsanity li a:hover,#fkLinsanity li a:active{
+        color: #FF8500;
+        text-decoration: underline;
+    }
+
+    /*赛季经典*/
+    #fkClassic{
+        width: 320px;
+        /*background-color: yellow;*/
+        height: 400px;
+        float: left;
+        margin-left: 20px;
+    }
+    #fkClassic .videos{
+        background: url(../images/video.png) no-repeat -5px 2px; 
+        padding-left: 30px;
+        margin-top: 6px;
+    }
+    @-moz-document url-prefix(){#fkClassic .videos{margin-top: 4px;}}
+    #fkClassic li a{
+        color: #52687e;
+        font-size: 15px;
+        font-family: 微软雅黑;
+    }
+    #fkClassic li a:hover,#fkClassic li a:active{
+        color: #FF8500;
+        text-decoration: underline;
+    }
+
+    /*关于疯狂*/
+    #fkAbout{
+        width: 320px;
+        /*background-color: gray;*/
+        height: 400px;
+        float: left;
+        margin-left: 20px;
+    }
+    #fkAbout .videos{
+        background: url(../images/video.png) no-repeat -5px 2px; 
+        padding-left: 30px;
+        margin-top: 6px;
+    }
+    @-moz-document url-prefix(){#fkAbout .videos{margin-top: 4px;}}
+    #fkAbout .texts{
+        background: url(../images/news.png) no-repeat 10px 2px; 
+        padding-left: 30px;
+        margin-top: 6px;
+    }
+    @-moz-document url-prefix(){#fkAbout .texts{margin-top: 4px;}}
+    #fkAbout li a{
+        color: #52687e;
+        font-size: 15px;
+        font-family: 微软雅黑;
+    }
+    #fkAbout li a:hover,#fkAbout li a:active{
+        color: #FF8500;
+        text-decoration: underline;
+    }
+
+/************主要正文内容结束************/
+
+/*********网页尾部开始*********/
+    #footer{
+        width: 1000px;
+        margin: 20px auto;
+        /*background-color: blue;*/
+        /*border-top: 1px solid #cccccc;*/
+    }
+    .footer-text{
+        text-align: center;
+        font-size: 12px;
+        font-family: 微软雅黑;
+        margin: 10px auto; 
+        color: #939393;
+    }
+    .footer-text a{
+        color: #939393;
+    }
+    .footer-iv{
+        width: 1000px;
+        background-color: #F7F7F7;
+        
+    }
+    .footer-ivtext{
+        font-family: 微软雅黑;
+        height: 20px;
+        text-align: center;       
+        line-height: 20px;
+    }
+    .footer-ivtext a{
+        font-size: 12px;
+        color: #75839d;        
+    }
+    .footer-ivtext a:hover,.footer-ivtext a:active,.footer-text a:hover,.footer-text a:active{
+        color: #FF8500;
+        text-decoration: underline;
+    }
+/*********网页尾部结束*********/
+
+/*返回顶部*/
+    .gotop{
+        display: block;
+        width: 54px;
+        height: 54px;
+        background: url(../images/gotop.png) no-repeat -54px 0;
+        position: fixed;
+        right: 30px;
+        bottom: 50px;
+    }
+    .gotop:hover,.gotop:active{
+        background: url(../images/gotop.png) no-repeat 0 0;
+    }

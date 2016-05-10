@@ -1,0 +1,78 @@
+#content{
+		width: 1000px;
+		height: 100%;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	#ad-box{
+		width: 400px;
+		height: 500px;
+		float: left;
+		margin-top: 20px;
+		/*background-color: orange;*/
+	}
+	#focus-content{
+		position: relative;
+		/*border: 2px solid red;*/		
+		width: 400px;
+		height: 300px;
+		overflow: hidden;
+	}
+	#focus-number{
+		position: absolute;
+		left: 305px;
+		bottom: 5px;
+	}
+	#focus-number li{
+		display: block;
+		float: left;
+		width: 20px;
+		height: 20px;
+		margin-right: 5px;
+		line-height: 20px;
+		text-align: center;
+		cursor: pointer;
+		background-color: gray;
+		font-family: 微软雅黑;
+	}
+	#focus-number .current{
+		background: #900;
+	    color: #fff;
+	}
+
+	#image-ad{
+		width: 400px;
+		height: 190px;		
+		margin-top: 10px;
+	}
+	.iadbox{
+		width: 130px;
+		height: 90px;
+		display: block;
+		float: left;
+		margin-right: 3px;
+		margin-top: 5px;
+		position: relative;
+		/*background-color: red;*/
+	}
+	.pro-title{
+	   	display: block;
+	    width: 130px;
+    	height: 20px;
+	   	line-height: 20px;
+	   	text-align: center;
+	   	font-family: 微软雅黑;
+	   	font-size: 13px;
+	    color: white;
+	    background-color: black;
+	    opacity: .6;
+	    filter: alpha(opacity=80);
+	    position: absolute;
+	    left: 0;
+	    bottom: 0;
+	}
+	.iadbox:hover .pro-title{
+		color: orange;
+	    opacity: .9;
+	    filter: alpha(opacity=100);
+	}
