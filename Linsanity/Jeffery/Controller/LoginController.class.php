@@ -34,6 +34,7 @@ class LoginController extends Controller{
             'useImgBg' => true,  // 开启验证码背景图片
             'imageW' => 90,  // 验证码宽度
             'imageH' => 30,  // 验证码高度
+            'codeSet' => '0123456789'
         );
 		$Verify = new \Think\Verify($config);
         $Verify->entry();

@@ -64,6 +64,12 @@ class DetailController extends HeaderController{
         $footInfo=$newsOb->where("cateid=$cid")->order('id asc')->select();
         $this->assign('footInfo',$footInfo);
 
+        // 寻求合作
+        $cInfo=$cateOb->where("title='寻求合作'")->select();
+        $id=$cInfo[0]['id'];
+        $emailInfo=$newsOb->where("cateid=$id")->order('id asc')->limit('0,1')->select();
+        $this->assign('emailInfo',$emailInfo[0]);
+
 		$this->display();
 	}
 
@@ -129,6 +135,12 @@ class DetailController extends HeaderController{
         $newsOb=M('news');
         $footInfo=$newsOb->where("cateid=$cid")->order('id asc')->select();
         $this->assign('footInfo',$footInfo);
+
+        // 寻求合作
+        $cInfo=$cateOb->where("title='寻求合作'")->select();
+        $id=$cInfo[0]['id'];
+        $emailInfo=$newsOb->where("cateid=$id")->order('id asc')->limit('0,1')->select();
+        $this->assign('emailInfo',$emailInfo[0]);
 
 		$this->display();
 	}

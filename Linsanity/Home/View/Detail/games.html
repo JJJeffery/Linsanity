@@ -54,6 +54,7 @@
         </foreach>           
         </p>
     </div>
+    <p class="footer-text">{$emailInfo['title']}<a href="mailto:{$emailInfo['content']}">{$emailInfo['content']}</a></p>
     <foreach name="footInfo" item="v">
         <p class="footer-text">{$v.content}</p>
     </foreach>
